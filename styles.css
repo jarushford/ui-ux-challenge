@@ -18,8 +18,12 @@ body {
 main {
   display: grid;
   grid-template-columns: 650px 270px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   width: 920px;
+}
+
+.burger {
+  display: none;
 }
 
 /* Dashboard Cards */
@@ -205,4 +209,24 @@ p.rest {
   font-family: 'Rationale', sans-serif;
   font-size: .85rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .dashboard {
+    display: none;
+  }
+
+  main {
+    display: block;
+    width: 270px;
+    margin: 0 auto 120px;
+  }
+
+  .burger {
+    display: unset;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
 }

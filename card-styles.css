@@ -13,6 +13,16 @@ header h1 {
   align-items: flex-end;
 }
 
+header .icon {
+  cursor: pointer;
+}
+
+.scrolling-feed {
+  margin-top: 12px;
+  max-height: 104vh;
+  overflow: scroll;
+}
+
 .search-and-menu {
   display: flex;
   align-items: center;
@@ -28,6 +38,10 @@ header h1 {
   margin-right: 20px;
 }
 
+.search-and-menu input::placeholder {
+  font-family: 'Ralway', sans-serif;
+}
+
 .title-icon {
   height: 40px;
 }
@@ -40,6 +54,7 @@ header h1 {
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
+  padding-bottom: 5px;
 }
 
 .user-data {
@@ -92,6 +107,13 @@ header h1 {
   justify-content: flex-end;
   font-size: 12px;
   margin-right: 5px;
+  color: #03817B;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+a:visited {
+  color: #03817B;
 }
 
 .workout-data-container p {
@@ -104,4 +126,16 @@ header h1 {
 
 .heart-img:hover {
   cursor: pointer
+}
+
+@media screen and (max-width: 1000px) {
+  .scrolling-feed {
+    height: unset;
+    overflow: visible;
+  }
+
+  header {
+    margin: 50px auto;
+    flex-direction: column;
+  }
 }
