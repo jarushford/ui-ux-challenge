@@ -9,6 +9,7 @@
   </head>
   <body>
     <header>
+      <img class="burger" src="./burger.svg" alt="burger">
       <h1>instaF<span><img class="title-icon" src="./Group.svg"></span>t</h1>
       <div class="search-and-menu">
         <input type="text" placeholder="Search">
@@ -21,9 +22,9 @@
           <div class="card-header">
             <h2>Goals</h2>
             <ul>
-              <li>Week</li>
-              <li>Month</li>
-              <li>Year</li>
+              <li class="first-li">week</li>
+              <li>month</li>
+              <li>year</li>
             </ul>
             <img src="./plus-icon.svg">
           </div>
@@ -80,58 +81,58 @@
           <div class="card-header">
             <h2>Calendar</h2>
             <ul>
-              <li>Week</li>
-              <li>Month</li>
-              <li>Year</li>
+              <li class="first-li">week</li>
+              <li>month</li>
+              <li>year</li>
             </ul>
           </div>
           <div class="weekday-card-container">
             <div class="weekday-card">
               <h3>Sunday</h3>
               <div>
-                <p>Custom</p>
+                <p class="activity-type">Custom</p>
                 <p>5k</p>
               </div>
             </div>
             <div class="weekday-card">
               <h3>Monday</h3>
               <div>
-                <p>Nike</p>
+                <p class="activity-type">Nike</p>
                 <p>Just Do Pushups</p>
-                <p>Custom</p>
+                <p class="activity-type">Custom</p>
                 <p>Circuit Challenge</p>
               </div>
             </div>
             <div class="weekday-card">
               <h3>Tuesday</h3>
               <div>
-                <p>Rest Day</p>
+                <p class="rest">Rest Day</p>
               </div>
             </div>
             <div class="weekday-card">
               <h3>Wednesday</h3>
               <div>
-                <p>Custom</p>
+                <p class="activity-type">Custom</p>
                 <p>Yoga</p>
               </div>
             </div>
             <div class="weekday-card">
               <h3>Thursday</h3>
               <div>
-                <p>Rest Day</p>
+                <p class="rest">Rest Day</p>
               </div>
             </div>
             <div class="weekday-card">
               <h3>Friday</h3>
               <div>
-                <p>Custom</p>
+                <p class="activity-type">Custom</p>
                 <p>Fierce 45</p>
               </div>
             </div>
             <div class="weekday-card">
               <h3>Saturday</h3>
               <div>
-                <p>The North Face</p>
+                <p class="activity-type">The North Face</p>
                 <p>Hiking Challenge</p>
               </div>
             </div>
@@ -141,16 +142,16 @@
           <div class="card-header">
             <h2>Challenges</h2>
             <ul>
-              <li>Current</li>
-              <li>Upcoming</li>
-              <li>Completed</li>
+              <li class="first-li">current</li>
+              <li>upcoming</li>
+              <li>completed</li>
             </ul>
             <img src="./plus-icon.svg">
           </div>
           <div class="card-container">
-            <div>
-              <p>Nike</p>
-              <p>Just do Pushups</p>
+            <div class="card">
+              <p class='card-title'>Nike</p>
+              <p class="card-activity">Just do Pushups</p>
               <ul>
                 <li>20 pushups</li>
                 <li>12 sets</li>
@@ -161,22 +162,18 @@
               </div>
               <button class="complete-and-post">Complete & Post</button>
             </div>
-            <div>
-              <div>
-                <p>Nike</p>
-                <p>Just do Pushups</p>
-                <ul>
-                  <li>20 pushups</li>
-                  <li>12 sets</li>
-                </ul>
-                <div class="challenge-stats">
-                  <p>30 min</p>
-                  <p>600 calories</p>
-                </div>
-                <button class="complete-and-post">Complete & Post</button>
+            <div class="card">
+              <p class='card-title'>Nike</p>
+              <p class="card-activity">Just do Pushups</p>
+              <ul>
+                <li>20 pushups</li>
+                <li>12 sets</li>
+              </ul>
+              <div class="challenge-stats">
+                <p>30 min</p>
+                <p>600 calories</p>
               </div>
-              <div>
-            </div>
+              <button class="complete-and-post">Complete & Post</button>
           </div>
         </article>
       </section>
@@ -193,7 +190,7 @@
                 <h4>LULU Lemon</h4>
                 <h3>Leg Day Challenge</h3>
               </div>
-              <img src="./heart.svg" alt="heart 101">
+              <img class="heart-img" src="./heart.svg" alt="heart 101">
             </div>
             <p class="user-post">Feeling the burn ::emojis::</p>
             <div class="workout-data-container">

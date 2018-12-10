@@ -15,3 +15,218 @@ body {
   --drop-bg: #344E4D;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 650px 270px;
+  margin: 0 auto 20px;
+  width: 920px;
+}
+
+.burger {
+  display: none;
+}
+
+/* Dashboard Cards */
+
+.dashboard article {
+  width: 600px;
+  background: var(--dark-bg);
+  border-radius: 10px;
+  margin: 12px 0;
+  padding: 15px;
+}
+
+.card-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.card-header h2 {
+  font-family: 'Rationale', sans-serif;
+  margin: 0;
+  font-size: 2rem;
+  color: #f8f8f8;
+}
+
+.card-header ul {
+  display: flex;
+  list-style: none;
+  margin: 0 0 0 20px;
+  padding-left: 0;
+  background:#f8f8f8;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card-header ul li {
+  padding: 0 10px;
+  border: 2px solid transparent;
+}
+
+.first-li {
+  background: #7A7A7A;
+  border: 2px solid #7A7A7A;
+  border-radius: 15px;
+  margin: 0;
+  color: #f8f8f8;
+}
+
+.card-header img {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.card-header img:hover {
+  transform: scale(1.05);
+  transition: .4s ease;
+}
+
+table {
+  width: 100%;
+}
+
+.row-title {
+  color: #f8f8f8;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 115px;
+}
+
+.progress-bg {
+  width: 340px;
+  height: 20px;
+  background: var(--light-bg);
+  border-radius: 2px;
+  margin: 3px auto;
+}
+
+.progress-fill {
+  width: 200px;
+  height: 20px;
+  background: #59BAB5;
+  border-radius: 2px;
+}
+
+.progress-percent {
+  color: #f8f8f8;
+}
+
+.progress-percent span {
+  color: var(--bright-acc);
+  font-weight: 600;
+}
+
+.weekday-card-container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(7, 82.5px);
+}
+
+.weekday-card {
+  width: 75px;
+  background: var(--light-bg);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.weekday-card h3 {
+  font-size: .8rem;
+  font-family: 'Rationale', sans-serif;
+}
+
+.weekday-card p {
+  font-size: .7rem;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+p.activity-type {
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+p.rest {
+  font-family: 'Rationale', sans-serif;
+  font-size: 1.3rem;
+  width: 50px;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  background: var(--light-bg);
+  border-radius: 5px;
+  margin: auto 10px;
+  width: 150px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.card p {
+  margin: 5px 0 5px 8px;
+}
+
+.card-title {
+  font-style: italic;
+  font-size: .9rem;
+}
+
+.card-activity {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card ul {
+  padding-left: 25px;
+}
+
+.card button {
+  margin: 10px auto;
+  background: var(--bright-acc);
+  border-radius: 10px;
+  width: 100px;
+  height: 20px;
+  border: none;
+  color: white;
+  font-family: 'Rationale', sans-serif;
+  font-size: .85rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .dashboard {
+    display: none;
+  }
+
+  main {
+    display: block;
+    width: 270px;
+    margin: 0 auto 120px;
+  }
+
+  .burger {
+    display: unset;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+}
