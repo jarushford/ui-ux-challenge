@@ -15,13 +15,20 @@ body {
   --drop-bg: #344E4D;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 650px 270px;
+  margin: 0 auto;
+  width: 920px;
+}
+
 /* Dashboard Cards */
 
 .dashboard article {
   width: 600px;
   background: var(--dark-bg);
   border-radius: 10px;
-  margin: 25px;
+  margin: 12px 0;
   padding: 15px;
 }
 
@@ -48,6 +55,7 @@ body {
   padding-left: 0;
   background:#f8f8f8;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .card-header ul li {
@@ -67,6 +75,13 @@ body {
   position: absolute;
   top: 5px;
   right: 0;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.card-header img:hover {
+  transform: scale(1.05);
+  transition: .4s ease;
 }
 
 table {
@@ -147,4 +162,47 @@ p.rest {
 
 .card-container {
   display: flex;
+}
+
+.card {
+  background: var(--light-bg);
+  border-radius: 5px;
+  margin: auto 10px;
+  width: 150px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.card p {
+  margin: 5px 0 5px 8px;
+}
+
+.card-title {
+  font-style: italic;
+  font-size: .9rem;
+}
+
+.card-activity {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card ul {
+  padding-left: 25px;
+}
+
+.card button {
+  margin: 10px auto;
+  background: var(--bright-acc);
+  border-radius: 10px;
+  width: 100px;
+  height: 20px;
+  border: none;
+  color: white;
+  font-family: 'Rationale', sans-serif;
+  font-size: .85rem;
+  cursor: pointer;
 }
