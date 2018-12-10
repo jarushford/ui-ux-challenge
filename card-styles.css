@@ -125,7 +125,8 @@ a:visited {
 }
 
 .heart-img:hover {
-  cursor: pointer
+  cursor: pointer;
+  animation: beat 2s infinite;
 }
 
 @media screen and (max-width: 1000px) {
@@ -137,5 +138,14 @@ a:visited {
   header {
     margin: 50px auto;
     flex-direction: column;
+  }
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1)
+  }
+  30% {
+    transform: scale(1.1)
   }
 }
