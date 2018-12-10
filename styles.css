@@ -5,4 +5,12 @@
 html,
 body {
   margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+::root {
+  --bright-acc: #71e5df;
+  --light-bg: #DCF2F1;
+  --dark-bg: #496C6F;
+  --drop-bg: #344E4D;
 }
