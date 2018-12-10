@@ -1,0 +1,74 @@
+.workout-post-card {
+  background: #DCF2F1;
+  width: 250px;
+  /* height: 600px; */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.user-data {
+  width: 100%;
+  display: flex;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.user-data h3 {
+  margin: 0 10px;
+}
+
+.workout-post {
+  width: 100%;
+  padding-left: 15px;
+}
+
+.workout-post h3,
+.workout-post h4 {
+  margin: 0;
+}
+
+.workout-post h4 {
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.post-data {
+  display: flex;
+}
+
+.post-data img {
+  margin-left: 20px;
+}
+
+.user-post {
+  margin-bottom: 30px;
+}
+
+.workout-data-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.workout-data-container a {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.workout-data-container p {
+  margin: 0;
+}
+
+.workout-data-container span {
+  font-weight: 800;
+}
+
+.heart-img:hover {
+  cursor: pointer
+}
